@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-        <title>My Porfolio Website - STK</title>
+        <title>My Porfolio - STK</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/77cc4d9149.js" crossorigin="anonymous"></script>
     </head>
@@ -12,10 +12,12 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <header class="logo">S T <span id="last-name">K</span></header>
+                    <header class="logo">
+                        <a href="#">S T <span id="last-name">K</span></a>
+                    </header>
                     <!--<img src="images/logo.png" class="logo">-->
                     <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Projects</a></li> 
                       <!-- <li><a href="#portfolio">Projects</a></li> --> 
@@ -24,11 +26,13 @@
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
-                <div class="header-text">
-                    <p>Hi, I'm Si Thu <span>Ko</span></p>
-                    <h1>Junior Self-taught Developer<br /> From Australia</h1>   
-                </div>
+              
             </div>
+        </div>
+
+        <div class="header-text">
+            <p>Hi, I'm Si Thu <span>Ko</span></p>
+            <h1>Junior Self-taught Developer<br /> From Australia</h1>   
         </div>
 
 <!---------About----------->
@@ -41,13 +45,11 @@
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>
-                            I am seeking a role that allows me to leverage and further enhance my skills as a junior self-taught developer. 
-                            I am passionate about web development, and game development. 
-                            I am eager to contribute my problem-solving abilities and creativity to a dynamic team. 
-                            I am looking for an opportunity that encourages continuous learning, growth, 
-                            and where I can make a meaningful impact. 
-                            Additionally, I value a collaborative work environment where I can learn from experienced professionals 
-                            and contribute my unique perspective as a junior self-taught developer.
+                            
+                            I am a passionate front-end and game developer, seeking a junior role to leverage and enhance my self-taught skills. 
+                            Eager to contribute problem-solving abilities and creativity to a dynamic team, 
+                            I'm looking for an opportunity that fosters continuous learning, growth, and meaningful impact. 
+                            I value collaborative environments where I can learn from experienced professionals and contribute my unique perspective as a junior developer.
                         </p>
 
                         <div class="tab-titles">
@@ -57,16 +59,15 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                            <!--   <li>UI/UX<br /><span>Designing Web/App Interfaces</span></li> --> 
-                                <li>Game Development<br /><span>Building Game Apps</span></li>
-                                <li>Web Development<br /><span>Web App Development</span></li>
-                                
+                            <!--   <li>UI/UX<br /><span>Designing Web/App Interfaces</span></li> -->
+                                <li>Front End Development<br /><span>HTML, CSS, JavaScript, React</span></li> 
+                                <li>Game Development<br /><span>Unity Game Engine, C#</span></li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li>Jan 2023 - Current<br /><span>Indie Game Developer, Sydney</span></li>
-                                <li>Jan 2019 - July 2021<br /><span>Retail Store Assistant Manager at KMN Textile, Myanmar</span></li>
+                                <li>Jan 2023 - Current<br /><span>Freelance Game Developer, Sydney</span></li>
+                                <li>Jan 2019 - July 2021<br /><span>Retail Store Assistant Manager at KMN Textile, Sydney</span></li>
                                 <li>Jan 2017 - Apr 2018<br /><span>Project Coordinator at KMN Textile, Myanmar</span></li>
                                 <li>Aug 2013 - Nov 2016<br /><span>Part-Time Supervisor at Subway Restaurant, Sydney</span></li>
                                 <li>Mar 2013 - Aug 2013<br /><span>Electrical Engineer Intern at Orion Integration, Sydney</span></li>
@@ -78,38 +79,33 @@
                                 <li>2009 - 2010<br /><span>Advanced Diploma of Electrical Technology at TAFE, Sydney</span></li>
                                
                             </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div>   
 <!----------- Services ----------->
 
         <div id="services">
             <div class="container">
                 <h1 class="sub-title">My Projects</h1>
                 <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-gamepad"></i>
-                       
-                        <h2>Game Development</h2>
-                        <p>Develope Games with Unity & C#</p>
-                        <a href="https://stk.my.canva.site/" target="_blank">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Development</h2>
-                        <p>Develope Website with HTML CSS & JS</p>
-                        <a href="#my-work">Learn more</a>
-                    </div>
-
-                <!--   <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Design UI/UX for website.</p>
-                        <a href="#">Learn more</a>
-                    </div> --> 
-                    
+                    <a href="#portfolio">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Front-end Development</h2>
+                            <p>HTML CSS JS & React</p>
+                            <!--<a href="#my-work">Learn more</a>-->
+                        </div>
+                    </a>
+                    <a href="https://stk.my.canva.site/" target="_blank">
+                        <div>
+                            <i class="fa-solid fa-gamepad"></i>    
+                            <h2>Game Development</h2>
+                            <p>Unity Game Engine & C#</p>
+                            <!--<a href="https://stk.my.canva.site/" target="_blank">Learn more</a>--> 
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -118,51 +114,67 @@
 
         <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title" id="my-work">Web Projects</h1>
+                <h1 class="sub-title" id="my-work">Front-end Projects</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="images/wit-crud-core-01-512.png" alt="work-1" />
-                        <div class="layer">
-                            <h3>CRUD Website</h3>
-                            <p>This website enables you to manage your favourite jobs by creating, reading, updating, and deleting entries.
-                                <br><br>
-                                Link to website.
-                            </p>
-                            <a href="https://st-ko.github.io/CRUD_Job-Lists/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Pikachu.png" alt="work-4" />
+                        <img src="images/kmn.png" alt="work-1" />
                         
                         <div class="layer">
-                            <h3>Pokemon Search App</h3>
-                            <p>This website lets you search your favourite Pokemon by retrieving data and images from freeCodeCamp's PokéAPI Proxy.
+                            <h3>E-Commerce Fashion Retail Store (Work in Progress)</h3>
+                            <p>Developing e-commerce store for KMN Textile retail business.
                                 <br><br>
-                                Link to Website
+                                <!--Link to website.-->
                             </p>
-                            <a href="https://st-ko.github.io/Pokemon-Search-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div> 
-                    <div class="work">
-                        <img src="images/Alecive-Flatwoken-Apps-2048.512.png" alt="work-2" />
-                        <div class="layer">
-                            <h3>2048 Clone</h3>
-                            <p>This is a 2048 web game. Use arrow keys to move and merge blocks.
-                                <br><br>
-                                Link to website.
-                            </p>
-                            <a href="https://st-ko.github.io/2048-Clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="link-icons">
+                            
+                                <div >
+                                    <a href="https://github.com/ST-KO/KMN-Website" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                <div > 
+                                    <a href="https://st-ko.github.io/KMN-Website/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                           
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/online-portfolio.png" alt="work-3" />
+                        <img src="images/pg.png" alt="work-2" />
                         <div class="layer">
-                            <h3>Portfolio Website</h3>
-                            <p>This is my portfolio webiste
+                            <h3>Responsive Webiste for Delivery Service </h3>
+                            <p>Developed this webiste for PG Delivery service.
                                 <br><br>
-                                Link to website
+                                <!--Link to website.-->
                             </p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div class="link-icons">
+                            
+                                <div >
+                                    <a href="https://github.com/ST-KO/PG-Delivery" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                <div > 
+                                    <a href="https://pgdelivery.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/2048.png" alt="work-4" />
+                        
+                        <div class="layer">
+                            <h3>2048 Clone</h3>
+                            <p>Recreation of popular mobile game.
+                                <br><br>
+                                <!--Link to Project-->
+                            </p>
+                            <div class="link-icons">
+                            
+                                <div >
+                                    <a href="https://github.com/ST-KO/2048-Clone" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                <div > 
+                                    <a href="https://st-ko.github.io/2048-Clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div> 
                 </div>
@@ -170,9 +182,10 @@
             </div>
         </div>
 
-        <!----------- Contact ----------->
+<!----------- Contact ----------->
 
         <div id="contact">
+
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
@@ -180,6 +193,10 @@
                         <p><i class="fa-solid fa-paper-plane"></i> sithu.ko21120@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i> 0426 033 831</p>
                         <div class="social-icons">
+                        <!--    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
                             <a href="https://github.com/ST-KO" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                         <a href="images/Si_Ko_CV.pdf" download class="btn btn2">Download CV</a>
@@ -194,14 +211,10 @@
                     </div>
                 </div>
             </div>
-            
-            <footer>
-                <div class="copyright">
+            <div class="copyright">
                 <!--<p>Copyright © Si Thu Ko.</p>-->
-                    <p>Designed and Developed By STK</p>
+                <p>Designed and Developed By STK</p>
             </div>
-            </footer>    
-            
         </div>
 
         <script src="script.js"></script>
