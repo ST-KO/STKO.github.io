@@ -11,28 +11,42 @@ body{
     background:  #080808;
     color: #fff;
 }
+
+
+/*---------- Header ----------*/
 #header{
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     /*height: 1000px;*/
     /*background-image: url(images/background.png);*/
-    background-size: cover;
-    background-position: center;
+    /*background-size: cover;*/
+    /*background-position: center;*/
 }
 .container{
-    padding: 10px 10%;
+    padding: 0px 5%;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-#last-name{
-    color: #ffa500;
+
+    background-color: #080808;
+
 }
 .logo{
     /*width: 200px;*/
     font-size: 50px;
+    margin-top: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+#last-name{
+    color: #ffa500;
 }
 nav ul li{
     display: inline-block;
@@ -59,23 +73,22 @@ nav ul li a:hover::after{
     width: 100%; /* When hover over line will show, i.e., 0% - 100% */
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
+    padding: 0 5%;
 }
 .header-text h1{
-   
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text p span{
-   
     color: #ffa500;
 }
 
-/*-----About Section-----*/
 
+/*---------- About Section ----------*/
 #about{
-    padding: 10% 0;
+    margin-top: 9%;
     color: #ffa500;
 }
 .row{
@@ -100,7 +113,7 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     color: #fff;
-    line-height: 30px; /* Space between lines */
+    line-height: 35px; /* Space between lines */
     font-size: 20px;
 }
 .tab-titles{
@@ -134,7 +147,7 @@ nav ul li a:hover::after{
  }
  .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 20px 0;
     color: #ffa500;
  }
  .tab-contents ul li span{
@@ -148,10 +161,12 @@ nav ul li a:hover::after{
     display: block;
  }
 
- /*-----Services-----*/
+ /*---------- Services Section ----------*/
 
  #services{
-    padding: 10% 0;
+    /*padding: 10% 0;*/
+    margin-top: 8%;
+    color: #ffa500;
  }
  .services-list{
     display: grid;
@@ -159,6 +174,14 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
     color: #fff;
+ }
+ .services-list a{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
  }
  .services-list div{
     background: #262626;
@@ -171,49 +194,54 @@ nav ul li a:hover::after{
  .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
-    
  }
 .fa-brands.fa-app-store{
     margin-left: 30px;
 }
- .services-list div h2{
+.services-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
  }
- .services-list div a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    margin-top: 20px;
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: underline;
- }
+
  .services-list div:hover{
     background: #ffa500;
+    cursor: pointer;
     transform: translateY(-10px);
  }
 
- /*-----Portfolio-----*/
+ 
+ /*---------- Portfolio Section ----------*/
 
  #portfolio{
     padding: 50px 0;
-    
+    margin-top: 10%;
+    color: #ffa500;
  }
  #portfolio #my-work{
-    font-size: 40px;
+    font-size: 50px;
  }
- .work-list{
+/*.work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+}*/
+.work-list{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 100px
  }
  .work{
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /*border-radius: 10px;*/
     position: relative;
     overflow: hidden;
+    width: 80%;
  }
  .work img{
     width: 100%;
@@ -223,13 +251,14 @@ nav ul li a:hover::after{
  }
 .layer{
     color: #fff;
-    width: 100;
+    width: 100%;
     height: 0%;
     /* background: linear-gradient(rgba(0,0,0,0.6), #ff004f); */
-    /* background: linear-gradient(rgba(0,0,0,0.6), #080808); */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(255,165,0,1)); 
-    /* background: #ffa500; */
-    border-radius: 10px;
+    /*background: linear-gradient(rgba(0,0,0,0.6), #080808);*/
+    /*background: linear-gradient(rgba(0,0,0,0.6), rgba(255,165,0,1));*/ 
+    /*background: #ffa500;*/
+    background: #080808; 
+    /*border-radius: 10px;*/
     position: absolute;
     left: 0;
     bottom: 0;
@@ -244,29 +273,48 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
  }
- .layer h3{
+.layer h3{
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 25px;
  }
- .layer p{
+.layer p{
     font-size: 16px;
  }
- .layer a{
+ .link-icons{
+    
+    width: 13%;
     margin-top: 20px;
-    color: #ffa500;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: white;
-    width: 60px;
-    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+.link-icons div{
+    background: black;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    transition: transform 0.5s;
+}
+.layer a{
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 40px;
     text-align: center;
+    
  }
- .work:hover img{
+ .layer a:hover{
+    color: #ffa500;
+ }
+.link-icons div:hover{
+    transform: translateY(-5px);
+}
+/*.work:hover img{
     transform: scale(1.1);
- }
+}*/
  .work:hover .layer{
     height: 100%;
     width: 100%;
@@ -285,11 +333,13 @@ nav ul li a:hover::after{
  .btn:hover{
     background: #ffa500;
  }
+ 
 
-  /*-----Contact-----*/
+  /*------------ Contact Section ----------*/
 
   #contact{
     padding-top: 50px;
+    margin-top: 8%;
   }
   .contact-left{
     flex-basis: 35%;
@@ -306,6 +356,9 @@ nav ul li a:hover::after{
     color: #ffa500;
     font-size: 25px;
   }
+  .contact-left a{
+    font-weight: 1000;
+  }
   .social-icons{
     margin-top: 30px;
   }
@@ -313,7 +366,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #fff;
     display: inline-block;
     transition:  transform 0.5s;
   }
@@ -327,6 +380,9 @@ nav ul li a:hover::after{
   }
   .contact-right form{
     width: 100%;
+  }
+  .contact-right form button{
+    font-weight: 1000;
   }
   form input, form textarea{
     width: 100%;
